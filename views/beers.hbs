@@ -1,1 +1,17 @@
-<div>test2</div>
+{{!-- beersFromApi key features for beer cards
+image_url:
+name:
+tagline:
+description:
+Features for beer present
+image_url: (on the left by itself)
+name: 
+tagline: (include first_brewed: on this line)
+description:
+food_pairing: (is an array)
+brewers_tips:
+ --}}
+
+{{#each beersFromApi}}
+<a href="beers/{{id}}">{{> beerpartial this}} </a>
+{{/each}}
