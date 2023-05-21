@@ -11,7 +11,8 @@ description:
 food_pairing: (is an array)
 brewers_tips:
  --}}
-
-{{#each beersFromApi}}
-<a href="beers/{{id}}">{{> beerpartial this}} </a>
-{{/each}}
+<section id="beers">
+    {{#each beersFromApi}}
+    <div class="beerwindow"><a href="beers/{{id}}">{{> beerpartial this}} </div></a></div>
+    {{/each}}
+</section>
